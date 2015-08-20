@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TogetterOpener</string>
+    <string name="msg_appnotfound">Togetter アプリを開けません。インストールされていない場合は以下のボタンからインストールをお願いします。</string>
+    <string name="msg_from_googleplay">Google play: Togetter</string>
+	
+</resources>
