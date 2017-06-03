@@ -3,7 +3,9 @@
     <string name="app_name">TogetterOpener</string>
     <string name="msg_appnotfound">Togetter app is not found. Please install it by the following button.</string>
     <string name="msg_from_googleplay">Googple play: Togetter</string>
-    <string name="uri_togetter_prefix">comtogetterapp:/</string>
+    <string name="uri_togetter_schema">comtogetterapp://</string>
+    <string name="uri_togetter_path_web">/li/</string>
+    <string name="uri_togetter_path_app">list?id=</string>
     <string name="uri_togetter_googleplay">https://play.google.com/store/apps/details?id=com.togetter.app</string>
 
 </resources>

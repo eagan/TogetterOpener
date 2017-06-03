@@ -20,8 +20,14 @@ public class MainActivity extends Activity {
 		Uri uriReceive = intentReceive.getData();
 		String path = uriReceive.getPath();
 		
-		String uriTogetterPrefix = res.getString(R.string.uri_togetter_prefix);
-		Uri uri = Uri.parse(uriTogetterPrefix + path);
+		String uriTogetterSchema = res.getString(R.string.uri_togetter_schema);
+		String uriTogetterPathWeb = res.getString(R.string.uri_togetter_path_web);
+		String uriTogetterPathApp = res.getString(R.string.uri_togetter_path_app);
+		
+		if (path.startsWith(uriTogetterPathWeb)) {
+			path = uriTogetterPathApp + path.substring(uriTogetterPathWeb.length());
+		}
+		Uri uri = Uri.parse(uriTogetterSchema + path);
 		Intent intent = new Intent(Intent.ACTION_VIEW, uri);
 		try {
 			startActivity(intent);
